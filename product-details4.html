@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse | PixelShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+       
+   
+   <div class="container">
+       <div class="navbar">
+        <div class="logo"> <a href="index.html"><img src="images/logofull.png"></a>
+        </div>
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="products.html">Magazin</a></li>
+               <li><a href="services.html">Servicii</a></li>
+               <li><a href="deals.html">Promotii</a></li>
+               <li><a href="tos.html">Termeni si Conditii</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">Despre noi</a></li>
+           </ul> 
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick= "menutoggle()">
+    </div>
+    
+   </div>
+   <div class="small-container single-product">
+       <div class="row">
+           <div class="col-2">
+               <img src="images/mouse.png" width="100%" id="ProductImg">
+           </div>
+           <div class="col-2">
+               <p>Periferice</p>
+               <h1>Mouse gaming Logitech G502</h1>
+               <h4>399 RON</h4>
+            <input type="number" value = "1">
+            <a href="" class="btn">Adauga in cos</a>
+            <h3>Detalii produs</h3>
+            <p>Denumire:	
+Mouse Gaming Logitech G502 HERO
+Cod producator:	
+910-005470, 910-005471
+Garantie comerciala:	
+24 luni
+Garantie de conformitate:	24 luni
+General
+Tip mouse	
+Wired
+Interfata	
+USB
+Tehnologie	
+Optic
+Rezolutie maxima	
+25600 dpi
+Numar butoane	
+11
+Culoare	
+Negru
+Iluminare	
+Da
+Culoare LED	
+RGB
+Dimensiuni	
+132 x 75 x 40 mm
+Greutate	
+121 g
+Altele	
+Iluminare RGB
+Microprocessor: 32-bit
+USB data format: 16 bits/axis
+USB report rate: 1000 Hz (1ms)
+Resolution: 100 – 16,000 dpi
+Max. acceleration: >40G
+Max. speed: >400 ips
+Scroll tilt
+Pentru a beneficia de 25.600 DPI este necesar sa instalati ultima versiune de LOGITECH G HUB
+</p>
+           </div>
+       </div>
+   </div>
+   
+   <div class="small-container">
+       <div class="row row-2">
+           <h2>Produse similare</h2>
+           <p>Vezi mai mult</p>
+       </div>
+   </div>
+
+
+   
+   <div class="small-container">
+       
+       <div class="row">
+           <div class="col-4"> <a href="product-details1.html"><img src="images/rtx.png" alt=""></a>
+           </div> 
+           <div class="col-4">
+               <img src="images/monitor.png" alt="">
+           </div>   
+           <div class="col-4"> <a href="product-details3.html"><img src="images/monitor.png" alt=""></a>
+           </div> 
+           
+     </div>
+       </div>
+       
+    
+   <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                   <h3>Descarcati aplicatia noastra</h3>
+                   <p> Descarcati aplicatia pentru Android sau iOS</p> 
+                   <div class="app-logo">
+                       <img src="images/play-store.png" alt="">
+                       <img src="images/app-store.png" alt="">
+                   </div>
+                </div>
+                <div class="footer-col-2">
+                   <h3>PixelShop</h3>
+                   <img src="images/logofull.png" alt="">
+                   <p> Pana la cel mai mic detaliu.</p> 
+                </div>       
+                <div class="footer-col-3">
+                   <h3>Follow us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Instagram</li>
+                       <li>Youtube</li>
+                       <li>Twitter</li>
+                   </ul>
+                   
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script>  
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>                           
+                  
+                                
+            
+               
+                  
+                     
+                        
+                              
+</body>
+</html>

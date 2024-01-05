@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <div class="header">
+       
+   
+   <div class="container">
+       <div class="navbar">
+        <div class="logo"> <a href="index.html"><img src="images/logofull.png"></a>
+        </div>
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="products.html">Magazin</a></li>
+               <li><a href="services.html">Servicii</a></li>
+               <li><a href="deals.html">Promotii</a></li>
+               <li><a href="tos.html">Termeni si Conditii</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">Despre noi</a></li>
+           </ul> 
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick= "menutoggle()">
+    </div>
+     <div class="row">
+        <div class="col-2">
+            <h1>PixelShop</h1>
+            <p>Pana la cel mai mic detaliu.</p>
+            <a href="products.html" class="btn">Cumpara acum &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="images/mainpage.png">
+        </div>
+    </div>
+   </div>
+   </div>
+
+   <div class="categories">
+      <div class="small-container">
+          <div class="row">
+           <div class="col-3">
+               <img src="images/casti.png" alt="">
+           </div>
+           <div class="col-3">
+               <img src="images/ps5.png" alt="">
+           </div>
+           <div class="col-3">
+               <img src="images/pc.png" alt="">
+           </div>
+       </div>
+      </div>
+       
+   </div>  
+   
+   <div class="small-container">
+       <h2 class="title">Produse</h2>
+       <div class="row">
+           <div class="col-4"> <a href="product-details.html"><img src="images/rtx.png" alt=""></a>
+               <h4>Placa video EVGA GeForce RTX 3060 XC GAMING 12GB</h4>
+               <p>3129 RON</p> 
+           </div> 
+           <div class="col-4">
+               <img src="images/RAM.png" >
+               <h4>Memorii RAM Corsair Vengeance RGB 8GB DDR4</h4>
+               <p>599 RON</p> 
+           </div>   
+           <div class="col-4">
+               <img src="images/monitor.png" alt="">
+               <h4>Monitor gaming ASUS ROG Strix 27" 144Hz</h4>
+               <p>1499 RON</p> 
+           </div>  
+           <div class="col-4">
+               <img src="images/mouse.png">
+               <h4>Mouse gaming Logitech G502</h4>
+               <p>399 RON</p> 
+           </div>  
+        </div>
+       </div>
+       
+   
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/ASUS_Logo.svg.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/sony.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/lenovo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/razerlogo.png"alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                   <h3>Descarcati aplicatia noastra</h3>
+                   <p> Descarcati aplicatia pentru Android sau iOS</p> 
+                   <div class="app-logo">
+                       <img src="images/play-store.png" alt="">
+                       <img src="images/app-store.png" alt="">
+                   </div>
+                </div>
+                <div class="footer-col-2">
+                   <h3>PixelShop</h3>
+                   <img src="images/logofull.png" alt="">
+                   <p> Pana la cel mai mic detaliu.</p> 
+                </div>       
+                <div class="footer-col-3">
+                   <h3>Follow us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Instagram</li>
+                       <li>Youtube</li>
+                       <li>Twitter</li>
+                   </ul>
+                   
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>   
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script>         
+            
+               
+                  
+                     
+                        
+                              
+</body>
+</html>

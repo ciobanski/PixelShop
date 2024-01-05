@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse | PixelShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+       
+   
+   <a href="product-details4.html">
+   <div class="container">
+     <div class="navbar">
+       <div class="logo"> <img src="images/logofull.png">
+       </div>
+       <nav>
+         <ul id="MenuItems">
+           <li>Magazin</li>
+           <li>Servicii</li>
+           <li>Promotii</li>
+           <li>Termeni si Conditii</li>
+           <li>Contact</li>
+           <li>Despre noi</li>
+         </ul> 
+       </nav>
+       <img src="images/cart.png" width="30px" height="30px">
+       <img src="images/menu.png" class="menu-icon" onclick= "menutoggle()">
+     </div>
+     
+   </div>
+   <div class="small-container single-product">
+     <div class="row">
+       <div class="col-2">
+         <img src="images/RAM.png" width="100%" id="ProductImg">
+       </div>
+       <div class="col-2">
+         <p>Memorii</p>
+         <h1>Memorii RAM Corsair Vengeance RGB 8GB DDR4</h1>
+         <h4>599 RON</h4>
+         <input type="number" value = "1">
+         Adauga in cos
+         <h3>Detalii produs</h3>
+         <p>Denumire:	
+           Memorie Corsair Vengeance RGB PRO 8GB DDR4 3200MHz CL16
+           Cod producator:	
+           CMW8GX4M1Z3200C16
+           Garantie comerciala:	
+           99 luni
+           Garantie de conformitate:	24 luni
+           General
+           Recomandat pentru Gaming	
+           Da
+           Serie	
+           Vengeance RGB PRO
+           Tip	
+           DDR4
+           Capacitate	
+           8 GB
+           Frecventa	
+           3200 MHz
+           Latenta CAS	
+           16 CL
+           Radiator	
+           Vengeance RGB PRO
+           Standard	
+           PC4-25600
+           Tensiune alimentare	
+           1.35 V
+           Iluminare LED	
+           Da, LED RGB
+         </p>
+       </div>
+     </div>
+   </div>
+   
+   <div class="small-container">
+     <div class="row row-2">
+       <h2>Produse similare</h2>
+       <p>Vezi mai mult</p>
+     </div>
+   </div>
+
+
+   
+   <div class="small-container">
+     
+     <div class="row">
+       <div class="col-4"> <img src="images/rtx.png" alt="">
+       </div> 
+       <div class="col-4">
+         <img src="images/monitor.png" alt="">
+       </div>   
+       <div class="col-4">
+         <img src="images/mouse.png" alt="">
+       </div> 
+       
+     </div>
+   </div>
+       
+    
+   <div class="footer">
+     <div class="container">
+       <div class="row">
+         <div class="footer-col-1">
+           <h3>Descarcati aplicatia noastra</h3>
+           <p> Descarcati aplicatia pentru Android sau iOS</p> 
+           <div class="app-logo">
+             <img src="images/play-store.png" alt="">
+             <img src="images/app-store.png" alt="">
+           </div>
+         </div>
+         <div class="footer-col-2">
+           <h3>PixelShop</h3>
+           <img src="images/logofull.png" alt="">
+           <p> Pana la cel mai mic detaliu.</p> 
+         </div>       
+         <div class="footer-col-3">
+           <h3>Follow us</h3>
+           <ul>
+             <li>Facebook</li>
+             <li>Instagram</li>
+             <li>Youtube</li>
+             <li>Twitter</li>
+           </ul>
+           
+         </div>
+       </div>
+       <hr>
+     </div>
+   </div>
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+   </script>  
+
+   <script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+   </script>                           
+                  
+                                
+            
+               
+                  
+                     
+                        
+                              
+   </a>
+</body>
+</html>

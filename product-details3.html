@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse | PixelShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+       
+   
+   <div class="container">
+       <div class="navbar">
+        <div class="logo"> <a href="index.html"><img src="images/logofull.png"></a>
+        </div>
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="products.html">Magazin</a></li>
+               <li><a href="services.html">Servicii</a></li>
+               <li><a href="deals.html">Promotii</a></li>
+               <li><a href="tos.html">Termeni si Conditii</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">Despre noi</a></li>
+           </ul> 
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick= "menutoggle()">
+    </div>
+    
+   </div>
+   <div class="small-container single-product">
+       <div class="row">
+           <div class="col-2">
+               <img src="images/monitor.png" width="100%" id="ProductImg">
+           </div>
+           <div class="col-2">
+               <p>Monitor</p>
+               <h1>Monitor gaming ASUS ROG Strix 27" 144Hz</h1>
+               <h4>1499 RON</h4>
+            <input type="number" value = "1">
+            <a href="" class="btn">Adauga in cos</a>
+            <h3>Detalii produs</h3>
+            <p>Denumire:	
+Monitor LED ASUS Gaming ROG Strix XG27VQ Curbat 27 inch 4ms black-red FreeSync 144Hz
+Cod producator:	
+XG27VQ
+Garantie comerciala:	
+36 luni
+Garantie de conformitate:	24 luni
+General
+Recomandat pentru	
+Gaming
+Tip panel	
+VA
+Diagonala	
+27 inch
+Anti-Glare	
+Da
+Rezolutie	
+1920 x 1080 pixeli
+Timp de raspuns	
+4 ms
+Refresh Rate	
+144 Hz
+Rata de aspect	
+16:9
+Contrast	
+1000:1 (normal)
+Luminozitate	
+300 cd/mp
+Unghi de vizibilitate	
+178/178 grade
+Dimensiune punct	
+0.311 mm
+Culoare	
+Negru/Rosu
+Putere consumata	
+50 W
+Dimensiuni	
+Cu suport: 619.64 x 423.91 x 268.62 mm
+Fara suport: 619.64 x 371.12 x 109 mm
+Greutate	
+6.9 kg
+Montare perete	
+100 x 100 VESA
+Plug and play	
+Da
+Curbat	
+Da
+Iluminare	
+RGB
+Tehnologii
+FreeSync	
+Da
+Flicker Free	
+Da
+Blue Light Reducer	
+Da
+Ergonomie
+Inclinare	
+-5/+20
+Picior pivotant	
+-50/+50
+Inaltime ajustabila	
+100 mm
+Porturi
+HDMI	
+1
+Display Port	
+1
+DVI	
+1
+Jack	
+1
+</p>
+           </div>
+       </div>
+   </div>
+   
+   <div class="small-container">
+       <div class="row row-2">
+           <h2>Produse similare</h2>
+           <p>Vezi mai mult</p>
+       </div>
+   </div>
+
+
+   
+   <div class="small-container">
+       
+       <div class="row">
+           <div class="col-4"> <a href="product-details1.html"><img src="images/rtx.png" alt=""></a>
+           </div> 
+           <div class="col-4"> <a href="product-details2.html"><img src="images/RAM.png" alt=""></a>
+           </div>   
+           <div class="col-4"> <a href="product-details4.html"><img src="images/mouse.png" alt=""></a>
+           </div> 
+           
+     </div>
+       </div>
+       
+    
+   <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                   <h3>Descarcati aplicatia noastra</h3>
+                   <p> Descarcati aplicatia pentru Android sau iOS</p> 
+                   <div class="app-logo">
+                       <img src="images/play-store.png" alt="">
+                       <img src="images/app-store.png" alt="">
+                   </div>
+                </div>
+                <div class="footer-col-2">
+                   <h3>PixelShop</h3>
+                   <img src="images/logofull.png" alt="">
+                   <p> Pana la cel mai mic detaliu.</p> 
+                </div>       
+                <div class="footer-col-3">
+                   <h3>Follow us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Instagram</li>
+                       <li>Youtube</li>
+                       <li>Twitter</li>
+                   </ul>
+                   
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script>  
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>                           
+                  
+                                
+            
+               
+                  
+                     
+                        
+                              
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse | PixelShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+       
+   
+   <div class="container">
+       <div class="navbar">
+        <div class="logo"> <a href="index.html"><img src="images/logofull.png"></a>
+        </div>
+        <nav>
+           <ul id="MenuItems">
+               <li><a href="products.html">Magazin</a></li>
+               <li><a href="services.html">Servicii</a></li>
+               <li><a href="deals.html">Promotii</a></li>
+               <li><a href="tos.html">Termeni si Conditii</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">Despre noi</a></li>
+           </ul> 
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick= "menutoggle()">
+    </div>
+    
+   </div>
+   <div class="small-container single-product">
+       <div class="row">
+           <div class="col-2">
+               <img src="images/rtx.png" width="100%" id="ProductImg">
+           </div>
+           <div class="col-2">
+               <p>Placi Video</p>
+               <h1>Placa Video EVGA GeForce RTX 3060 XC Gaming 12GB</h1>
+               <h4>3129 RON</h4>
+            <input type="number" value = "1">
+            <a href="" class="btn">Adauga in cos</a>
+            <h3>Detalii produs</h3>
+            <p>Denumire:	
+Placa video EVGA GeForce RTX 3060 XC Gaming LHR 12GB GDDR6 192-bit
+Cod producator:	
+12G-P5-3657-KR
+Garantie comerciala:	
+24 luni
+Garantie de conformitate:	24 luni
+General
+Interfata	
+PCI Express x16 4.0
+Rezolutie maxima	
+7680x4320 pixeli
+Model
+Model	
+GeForce RTX 3060
+Editie/Racire	
+XC Gaming
+Recomandat pentru gaming	
+Da
+Chipset
+Producator chipset	
+NVIDIA
+Seria	
+GeForce RTX 3000
+Tehnologie de fabricatie	
+8 nm
+Procesor grafic	
+Ampere GA106
+GPU Boost clock	
+1882 MHz
+Data lansarii chipset	
+25.02.2021
+Shader Model	
+6.5
+Texture Units	
+112
+Raster Operators	
+48
+Numar de tranzistoare	
+13250 milioane
+CUDA Cores	
+3584
+Memorie
+Tip memorie	
+GDDR6
+Dimensiune memorie	
+12 GB
+BUS memorie	
+192 bit
+Frecventa memorie efectiva	
+15000 MHz
+3D API
+Suport DirectX	
+12 Ultimate
+Suport OpenGL	
+4.6
+Suport OpenCL	
+2.0
+Suport Vulkan	
+Da
+Suport G-Sync	
+Da
+VR Ready	
+Da
+Porturi
+HDMI	
+1
+Display port	
+3
+Suport HDTV	
+Da
+Racire
+Sistem racire	
+Activ
+Dimensiune racire	
+Dual slot
+Tip racire	
+Aer
+Altele
+HDCP Ready	
+Da
+Tehnologii	
+Microsoft DirectX® 12 Ultimate
+NVIDIA DLSS
+PCI Express Gen 4
+NVIDIA® GeForce Experience™
+NVIDIA Ansel
+NVIDIA FreeStyle
+NVIDIA ShadowPlay
+NVIDIA Highlights
+NVIDIA GPU Boost™
+HDMI 2.1
+DisplayPort 1.4a
+2nd Generation RT Cores
+3rd Generation Tensor Cores
+Alimentare separata	
+1x 8-pin PCI-E
+Dimensiuni	
+201.8 x 110 mm
+Altele	
+</p>
+           </div>
+       </div>
+   </div>
+   
+   <div class="small-container">
+       <div class="row row-2">
+           <h2>Produse similare</h2>
+           <p>Vezi mai mult</p>
+       </div>
+   </div>
+
+
+   
+   <div class="small-container">
+       
+       <div class="row">
+           <div class="col-4"> <a href="product-details2.html"><img src="images/RAM.png" alt=""></a>
+           </div> 
+           <div class="col-4"> <a href="product-details3.html"><img src="images/monitor.png" alt=""></a>
+           </div>   
+           <div class="col-4"> <a href="product-details4.html"><img src="images/mouse.png" alt=""></a>
+           </div> 
+           
+        </div>
+       </div>
+       
+    
+   <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                   <h3>Descarcati aplicatia noastra</h3>
+                   <p> Descarcati aplicatia pentru Android sau iOS</p> 
+                   <div class="app-logo">
+                       <img src="images/play-store.png" alt="">
+                       <img src="images/app-store.png" alt="">
+                   </div>
+                </div>
+                <div class="footer-col-2">
+                   <h3>PixelShop</h3>
+                   <img src="images/logofull.png" alt="">
+                   <p> Pana la cel mai mic detaliu.</p> 
+                </div>       
+                <div class="footer-col-3">
+                   <h3>Follow us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Instagram</li>
+                       <li>Youtube</li>
+                       <li>Twitter</li>
+                   </ul>
+                   
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script>  
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>                           
+                  
+                                
+            
+               
+                  
+                     
+                        
+                              
+</body>
+</html>
